@@ -1,0 +1,50 @@
+<!-- Ryan Hutchings -->
+<!-- Unit 18.3 Exercise: AJAX Giphy Party -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <!-- giphy logo -->
+  <img src="Poweredby_100px-Black_VertText.png" alt="giphy logo" class="bg-secondary position-absolute p-3">
+  <h1 class="text-center bg-secondary m-0 py-3 text-white">Giphy Party</h1>
+
+  <!-- the form is used for the user to search for gifs -->
+  <form method="get" id="searchGIFForm" class="bg-secondary text-center pb-3 d-flex justify-content-center">
+    <!-- search bar input -->
+    <label for="searchBar" class="m-0 d-flex flex-wrap align-content-center font-weight-bold text-white">Enter A
+      Catergory For Your GIF:</label>
+    <input type="text" name="searchBar" id="searchBar" class="ml-2 w-25" placeholder="What GIF would you like?">
+
+    <!-- submit button -->
+    <input type="submit" value="Search" class="btn btn-info mx-3">
+
+    <!-- remove gifs button -->
+    <button type="button" id="removeGIFSBtn" class="btn btn-danger">Remove GIFS</button>
+  </form>
+
+  <!-- Stores all the gifs -->
+  <div class="gifGallery p-4"></div>
+
+  <!-- Boostrap, JQuery, and Axios CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+
+  <!-- Main JS file -->
+  <script src="app.js"></script>
+</body>
+
+</html>
